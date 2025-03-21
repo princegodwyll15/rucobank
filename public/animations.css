@@ -1,0 +1,51 @@
+body, span{
+    font-family: "Roboto", sans-serif;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    width: 0;
+    animation: typing 3s steps(20, end) forwards, blink 0.7s infinite;
+    font-weight: bold;
+    color: #1e40af;
+  }
+
+  .typing-animation-two {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    opacity: 0;
+    animation: typing 3s steps(20, end) forwards, fadeIn 3s ease-in;
+    animation-delay: 3s;
+    font-weight: bold;
+    color: #e11d48;
+  }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body class="flex min-h-screen bg-gray-100">
+    
+    <!-- Sidebar -->
+    <aside class="w-1/5 bg-blue-900 text-white p-5 min-h-screen">
+        <h2 class="text-2xl font-bold mb-6">Admin Dashboard</h2>
+        <ul class="space-y-4">
+            <li><a href="#" class="block w-full p-3 rounded hover:bg-blue-50 hover:text-blue-700">🏠 Home</a></li>
+            <li><a href="#" class="block w-full p-3 rounded hover:bg-blue-50  hover:text-blue-700">➕ Create Member</a></li>
+            <li><a href="#" class="block w-full p-3 rounded hover:bg-blue-50  hover:text-blue-700">🔄 Update Member</a></li>
+            <li><a href="#" class="block w-full p-3 rounded hover:bg-blue-50  hover:text-blue-700">💰 Check Balance</a></li>
+            <li><a href="#" class="block w-full p-3 rounded hover:bg-blue-50  hover:text-blue-700">📥 Deposit Funds</a></li>
+            <li><a href="#" class="block w-full p-3 rounded hover:bg-blue-50  hover:text-blue-700">📤 Withdraw Funds</a></li>
+            <li><a href="#" class="block w-full p-3 rounded hover:bg-blue-50  hover:text-blue-700">📜 Transactions</a></li>
+            <li><a href="#" class="block w-full p-3 rounded hover:bg-blue-50  hover:text-blue-700">📊 Reports</a></li>
+            <li><a href="#" class="block w-full p-3 rounded hover:bg-red-600  hover:text-blue-700">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+        <h1 class="text-3xl font-bold mb-6">Welcome, Admin</h1>
+        
+        <!-- Dashboard Overview -->
+        <div class="grid grid-cols-3 gap-6 mb-6">
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2">Total Clients</h3>
+                <p class="text-3xl font-bold">1,245</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2">Total Deposits</h3>
+                <p class="text-3xl font-bold">$2,500,000</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold mb-2">Total Withdrawals</h3>
+                <p class="text-3xl font-bold">$1,300,000</p>
+            </div>
+        </div>
+
+        <!-- Admin Actions -->
+        <div class="grid grid-cols-2 gap-6">
+            <!-- Create New Member -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Create New Member</h2>
+                <form class="space-y-3">
+                    <input type="text" placeholder="Full Name" class="w-full p-2 border rounded">
+                    <input type="email" placeholder="Email" class="w-full p-2 border rounded">
+                    <input type="text" placeholder="Phone Number" class="w-full p-2 border rounded">
+                    <button class="w-full bg-blue-600 text-white p-2 rounded">Add Member</button>
+                </form>
+            </div>
+
+            <!-- Check Balance -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Check Client Balance</h2>
+                <form class="space-y-3">
+                    <input type="text" placeholder="Enter Account Number" class="w-full p-2 border rounded">
+                    <button class="w-full bg-green-600 text-white p-2 rounded">Check Balance</button>
+                </form>
+            </div>
+
+            <!-- Deposit Funds -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Deposit Funds</h2>
+                <form class="space-y-3">
+                    <input type="text" placeholder="Account Number" class="w-full p-2 border rounded">
+                    <input type="number" placeholder="Amount" class="w-full p-2 border rounded">
+                    <button class="w-full bg-blue-600 text-white p-2 rounded">Deposit</button>
+                </form>
+            </div>
+
+            <!-- Withdraw Funds -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Withdraw Funds</h2>
+                <form class="space-y-3">
+                    <input type="text" placeholder="Account Number" class="w-full p-2 border rounded">
+                    <input type="number" placeholder="Amount" class="w-full p-2 border rounded">
+                    <button class="w-full bg-red-600 text-white p-2 rounded">Withdraw</button>
+                </form>
+            </div>
+
+            <!-- Transactions -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">View Transactions</h2>
+                <button class="w-full bg-gray-700 text-white p-2 rounded">View All Transactions</button>
+            </div>
+
+            <!-- Reports -->
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Generate Reports</h2>
+                <button class="w-full bg-yellow-500 text-white p-2 rounded">Generate Report</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
